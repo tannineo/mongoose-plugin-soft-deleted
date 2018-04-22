@@ -3,10 +3,8 @@ const Schema = mongoose.Schema
 const foodSchema = Schema({
   name: String,
   calorie: Number,
-  taste: Schema.Types.Mixed,
+  taste: Object,
   bestBefore: Date
 })
 
-const FoodModel = mongoose.model('food', foodSchema)
-
-module.exports = FoodModel
+module.exports = foodSchema

@@ -6,6 +6,9 @@
   "author": "tan90 <tan90indream@163.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "mocha --exit"
+  },
   "engines": {
     "node": "^9.11.1 || ^8.11.1"
   },
@@ -19,8 +22,5 @@
     "@types/mongoose": "^5.0.10",
     "lodash": "^4.17.5",
     "mongoose": "^5.0.15"
-  },
-  "standard": {
-    "globals": ["describe", "it", "before", "after", "done"]
   }
 }
