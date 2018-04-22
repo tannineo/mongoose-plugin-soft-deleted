@@ -3,8 +3,16 @@
 a plugin for mongoose adding soft delete features
 
 ## Feautres
+  - add a field `deleted` to the schema
+  - add instance and static methods `delete` and `restore` to the schema
+
+## TODO
+  - [ ] override or overwrite basic `find` `findOne` `update` `updateMany` `count` etc...
+    - lease notice that mongoose offical doc doesn't recommend to override methods already exist
+    - consider using middleware
 
 ## Usage
+  WIP
 
 ## Develop & Test
   - prepare a mongodb instance with no authentication(simply localhost with a new mongo) and create a new test db(usually `test`)
