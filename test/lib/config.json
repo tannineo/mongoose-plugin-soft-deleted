@@ -1,0 +1,3 @@
+{
+  "mongoURL": "mongdb://localhost:27017/test"
+}
