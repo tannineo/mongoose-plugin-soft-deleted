@@ -10,6 +10,7 @@ a plugin for mongoose adding soft delete features
   - [ ] override or overwrite basic `find` `findOne` `update` `updateMany` `count` etc...
     - lease notice that mongoose offical doc doesn't recommend to override methods already exist
     - consider using middleware
+  - [ ] add `index.d.ts`
 
 ## Usage
   WIP
