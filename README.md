@@ -5,6 +5,7 @@ a plugin for mongoose adding soft delete features
 ## Feautres
   - add a field `deleted` to the schema
   - add instance and static methods `delete` and `restore` to the schema
+  - options to add `deletedAt` which is `Date`
 
 ## TODO
   - [ ] override or overwrite basic `find` `findOne` `update` `updateMany` `count` etc...
