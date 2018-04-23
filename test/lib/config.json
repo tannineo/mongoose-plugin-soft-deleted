@@ -1,3 +1,3 @@
 {
-  "mongoURL": "mongodb://localhost:27017/test"
+  "mongoURL": "mongodb://192.168.2.152:27017/test_deleted"
 }

@@ -4,17 +4,17 @@ require('chai').should()
 
 const config = require('./lib/config.json')
 const softDeletedPlugin = require('../index')
-const foodSchema = require('./lib/foodSchema')
+const foodSchema = require('./lib/foodSchemaFactory')()
 
 describe('basic deleted', () => {
   let FoodModel
 
   before(async () => {
     // init mongoose
-    await mongoose.connect(config.mongoURL)
+    const connection = await mongoose.createConnection(config.mongoURL)
     // register plugin before get model instance
     foodSchema.plugin(softDeletedPlugin, {})
-    FoodModel = mongoose.model('food', foodSchema)
+    FoodModel = connection.model('food', foodSchema)
   })
 
   after(async () => {
