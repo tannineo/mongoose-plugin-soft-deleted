@@ -1,4 +1,5 @@
 /* eslint-env mocha */
+const moment = require('moment')
 const mongoose = require('mongoose')
 const expect = require('chai').expect
 require('chai').should()
@@ -113,5 +114,21 @@ describe('deletedAt', () => {
     const steak = await FoodModel.findOne({ name: 'steak' })
     steak.deleted.should.be.equal(false)
     expect(steak.deletedAt).to.be.an('null')
+  })
+
+  it('should have eaten pizza yesterday', async () => {
+    const pizza = await FoodModel.findOne({ name: 'pizza' })
+    const when = moment().subtract(1, 'day').toDate()
+    await pizza.delete(when)
+    pizza.deleted.should.be.equal(true)
+    pizza.deletedAt.getTime().should.be.equal(when.getTime())
+  })
+
+  it('should have eaten burger yesterday', async () => {
+    const when = moment().subtract(1, 'day').toDate()
+    await FoodModel.delete({ name: 'burger' }, when)
+    const burger = await FoodModel.findOne({ name: 'burger' })
+    burger.deleted.should.be.equal(true)
+    burger.deletedAt.getTime().should.be.equal(when.getTime())
   })
 })
