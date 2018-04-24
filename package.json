@@ -1,6 +1,6 @@
 {
   "name": "mongoose-plugin-soft-deleted",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a plugin for mongoose 5.0.x adding soft delete features",
   "main": "index.js",
   "author": "tan90 <tannineo@outlook.com>",
