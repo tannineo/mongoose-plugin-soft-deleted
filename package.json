@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "a plugin for mongoose 5.0.x adding soft delete features",
   "main": "index.js",
-  "author": "tan90 <tan90indream@163.com>",
+  "author": "tan90 <tannineo@outlook.com>",
   "license": "MIT",
   "private": false,
   "keywords": [
