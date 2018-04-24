@@ -10,6 +10,8 @@ support`mongoose@5.0.x`
   - options to add `deletedAt` which is `Date`
   - provide methods to append `deleted: false` automatically like:
     - `async countNoDelete(cond)`
+    - `async findOneNoDeleted(cond)`
+    - `async findNoDeleted(cond)`
 
 ## TODO
   - [ ] override or overwrite basic `find` `findOne` `update` `updateMany` `count` etc...
