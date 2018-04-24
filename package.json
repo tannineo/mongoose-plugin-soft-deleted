@@ -25,5 +25,9 @@
   "dependencies": {
     "@types/mongoose": "5.0.x",
     "mongoose": "5.0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tannineo/mongoose-plugin-soft-deleted.git"
   }
 }
