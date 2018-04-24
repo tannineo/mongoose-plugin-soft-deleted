@@ -6,6 +6,15 @@
   "author": "tan90 <tan90indream@163.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "plugin",
+    "delete"
+  ],
+  "bugs": {
+    "url": "https://github.com/tannineo/mongoose-plugin-soft-deleted/issues"
+  },
   "scripts": {
     "test": "mocha --exit",
     "devtest": "DEBUG=mongoose-plugin-soft-deleted mocha --exit"
