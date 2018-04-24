@@ -8,6 +8,8 @@ support`mongoose@5.0.x`
   - add a field `deleted` to the schema
   - add instance and static methods `delete` and `restore` to the schema
   - options to add `deletedAt` which is `Date`
+  - provide methods to append `deleted: false` automatically like:
+    - `async countNoDelete(cond)`
 
 ## TODO
   - [ ] override or overwrite basic `find` `findOne` `update` `updateMany` `count` etc...
@@ -39,6 +41,11 @@ support`mongoose@5.0.x`
     deletedAt: true  // true to set a deletedAt timestamp while deleting a doc
   }
   ```
+
+## Methods
+```
+WIP
+```
 
 ## Develop & Test
   - prepare a mongodb instance with no authentication(simply localhost with a new mongo) and create a new test db(usually `test`)
