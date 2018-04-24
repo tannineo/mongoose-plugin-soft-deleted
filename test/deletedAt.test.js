@@ -13,7 +13,7 @@ describe('deletedAt', () => {
 
   before(async () => {
     // init mongoose
-    const connection = await mongoose.connect(config.mongoURL)
+    const connection = await mongoose.createConnection(config.mongoURL)
     // register plugin before get model instance
     foodSchema.plugin(softDeletedPlugin, { deletedAt: true })
     FoodModel = connection.model('food', foodSchema)

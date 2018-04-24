@@ -2,6 +2,8 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)  
 a plugin for mongoose adding soft delete features
 
+support`mongoose@5.0.x`
+
 ## Feautres
   - add a field `deleted` to the schema
   - add instance and static methods `delete` and `restore` to the schema
@@ -14,7 +16,29 @@ a plugin for mongoose adding soft delete features
   - [ ] add `index.d.ts`
 
 ## Usage
-  WIP
+  - `npm i --save mongoose-plugin-soft-deleted`
+  - before creating schemas, register the plugin globally:
+  ```js
+  const mongoose = require('mongoose')
+  const softDeleted = requrie('mongoose-plugin-soft-deleted')
+  
+  const mongoCon = mongoose.createConnection('mongodb://localhost:27017/test')
+  mongoCon.plugin(softDeleted, options)
+  ```
+  - or use it for a single schema, before creating a model:
+  ```js
+  const mongoose = require('mongoose')
+  const softDeleted = requrie('mongoose-plugin-soft-deleted')
+
+  const foodSchema = mongoose.Schema({ name: String, bestBefore: Date })
+  foodSchema.plugin(softDeleted, options)
+  ```
+  - `options` above is like:
+  ```js
+  {
+    deletedAt: true  // true to set a deletedAt timestamp while deleting a doc
+  }
+  ```
 
 ## Develop & Test
   - prepare a mongodb instance with no authentication(simply localhost with a new mongo) and create a new test db(usually `test`)
