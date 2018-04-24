@@ -1,5 +1,5 @@
 # mongoose-plugin-soft-deleted
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)  
+[![NPM](https://nodei.co/npm/mongoose-plugin-soft-deleted.png)](https://npmjs.org/package/mongoose-plugin-soft-deleted)  
 a plugin for mongoose adding soft delete features
 
 support`mongoose@5.0.x`
@@ -48,3 +48,4 @@ support`mongoose@5.0.x`
 
 ## About
 Nyan Nyan Nyan
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)  
