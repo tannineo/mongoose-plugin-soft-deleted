@@ -14,8 +14,9 @@ support`mongoose@5.0.x`
     - `async findNoDeleted(cond)`
 
 ## TODO
+  - add indexing support
   - [ ] override or overwrite basic `find` `findOne` `update` `updateMany` `count` etc...
-    - lease notice that mongoose offical doc doesn't recommend to override methods already exist
+    - Please notice that mongoose offical doc doesn't recommend to override methods already exist
     - consider using middleware
   - [ ] add `index.d.ts`
 
